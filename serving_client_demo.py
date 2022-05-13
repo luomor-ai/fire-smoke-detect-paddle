@@ -31,6 +31,6 @@ if __name__ == '__main__':
         x2, y2 = x + w, y + h
         # object_name = annos[j][""]
         img = cv2.rectangle(img, (x, y), (x2, y2), (255, 0, 0), thickness=2)
-        img = cv2.putText(img, r.json()["results"][0][j]["category"], (x, y))
+        img = cv2.putText(img, r.json()["results"][0][j]["category"], (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 255), 2)
         img_name = "fire_smoke/result.jpg"
         cv2.imwrite(img_name, img)

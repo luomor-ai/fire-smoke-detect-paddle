@@ -55,7 +55,18 @@ sudo docker push yiluxiangbei/paddlehub:v1.0
 sudo docker run -ti --volume="$(pwd)":/app --rm yiluxiangbei/paddlehub:v1.0 bash
 cd /app
 python serving_client_demo.py
- 
+
+cv2.putText(image, text, (5,50 ), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 255), 2)
+位置参数说明：
+
+图片
+要添加的文字
+文字添加到图片上的位置
+字体的类型
+字体大小
+字体颜色
+字体粗细
+
 https://hub.docker.com/r/paddlepaddle/serving
 ```
 
