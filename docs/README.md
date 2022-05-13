@@ -1,15 +1,18 @@
 ```shell
 sudo docker pull paddlepaddle/serving
 sudo docker pull paddlepaddle/paddle
-sudo docker pull python:3.6-rc-buster
+sudo docker pull python:3.6
 
 sudo docker pull registry.baidubce.com/paddlepaddle/paddle:2.2.0
 
 # registry.baidubce.com/paddlepaddle/paddle:2.2.2
 
 sudo docker run -ti --volume="$(pwd)":/app --rm paddlepaddle/paddle:2.2.0 bash
-sudo docker run -ti --volume="$(pwd)":/app --rm python:3.6-rc-buster bash
+sudo docker run -ti --volume="$(pwd)":/app --rm python:3.6 bash
 pip install paddlehub -i https://pypi.doubanio.com/simple/
+pip install paddlepaddle -i https://pypi.doubanio.com/simple/
+
+pip show paddlehub
 
 https://hub.docker.com/r/paddlepaddle/serving
 ```
