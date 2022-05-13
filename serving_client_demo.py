@@ -12,7 +12,7 @@ def cv2_to_base64(image):
 
 if __name__ == '__main__':
     # 获取图片的base64编码格式
-    img1 = cv2_to_base64(cv2.imread("fire_smoke/images/fire_000061.jpg"))
+    img1 = cv2_to_base64(cv2.imread("fire_smoke/images/fire_000001.jpg"))
     img2 = cv2_to_base64(cv2.imread("fire_smoke/images/smoke_000001.jpg"))
     data = {'images': [img1, img2]}
     # 指定content-type
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     # 打印预测结果
     print(r.json()["results"])
 
-    img = cv2.imread("fire_smoke/images/fire_000061.jpg")
+    img = cv2.imread("fire_smoke/images/fire_000001.jpg")
     for j in range(len(r.json()["results"][0])):
         x, y, w, h = r.json()["results"][0][j]["bbox"]
         x, y, w, h = int(x), int(y), int(w), int(h)
