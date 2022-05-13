@@ -1,0 +1,18 @@
+hub convert --model_dir inference_model/inference_model \
+            --module_name fire-smoke-detect-paddle \
+            --module_version 1.0.0 \
+            --output_dir fire-smoke-detect-paddle-hub
+Traceback (most recent call last):
+  File "/usr/local/bin/hub", line 5, in <module>
+    from paddlehub.commands.utils import execute
+  File "/usr/local/lib/python3.6/site-packages/paddlehub/__init__.py", line 31, in <module>
+    from paddlehub import datasets
+  File "/usr/local/lib/python3.6/site-packages/paddlehub/datasets/__init__.py", line 15, in <module>
+    from paddlehub.datasets.canvas import Canvas
+  File "/usr/local/lib/python3.6/site-packages/paddlehub/datasets/canvas.py", line 23, in <module>
+    from paddlehub.vision.utils import get_img_file
+  File "/usr/local/lib/python3.6/site-packages/paddlehub/vision/utils.py", line 18, in <module>
+    import cv2
+  File "/usr/local/lib/python3.6/site-packages/cv2/__init__.py", line 8, in <module>
+    from .cv2 import *
+ImportError: libGL.so.1: cannot open shared object file: No such file or directory

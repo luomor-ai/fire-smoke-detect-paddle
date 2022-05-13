@@ -14,6 +14,16 @@ pip install paddlepaddle -i https://pypi.doubanio.com/simple/
 
 pip show paddlehub
 
+apt-get update && apt-get install -y opencv-python-headless
+pip install opencv-python-headless -i https://pypi.doubanio.com/simple/
+apt-get update && apt-get install libgl1
+pip install opencv-python -i https://pypi.doubanio.com/simple/
+
+hub convert --model_dir inference_model/inference_model \
+            --module_name fire-smoke-detect-paddle \
+            --module_version 1.0.0 \
+            --output_dir fire-smoke-detect-paddle-hub
+
 https://hub.docker.com/r/paddlepaddle/serving
 ```
 
