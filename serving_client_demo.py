@@ -23,3 +23,14 @@ if __name__ == '__main__':
 
     # 打印预测结果
     print(r.json()["results"])
+
+    img = cv2.imread("fire_smoke/images/fire_000061.jpg")
+    for j in range(r.json()["results"][0]):
+        x, y, w, h = r.json()["results"][0][j]["bbox"]
+        x, y, w, h = int(x), int(y), int(w), int(h)
+        x2, y2 = x + w, y + h
+        # object_name = annos[j][""]
+        img = cv2.rectangle(img, (x, y), (x2, y2), (255, 0, 0), thickness=2)
+        img = cv2.putText(img, r.json()["results"][0][j]["category"], (x, y))
+        img_name = "fire_smoke/result.jpg"
+        cv2.imwrite(img_name, img)
