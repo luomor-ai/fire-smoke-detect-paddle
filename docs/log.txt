@@ -16,3 +16,11 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.6/site-packages/cv2/__init__.py", line 8, in <module>
     from .cv2 import *
 ImportError: libGL.so.1: cannot open shared object file: No such file or directory
+
+hub install fire-smoke-detect-paddle-hub/fire-smoke-detect-paddle.tar.gz
+Decompress fire-smoke-detect-paddle-hub/fire-smoke-detect-paddle.tar.gz
+[##################################################] 100.00%
+[2022-05-13 09:21:51,765] [    INFO] - Successfully uninstalled fire-smoke-detect-paddle
+2022-05-13 09:21:52,763-WARNING: type object 'QuantizationTransformPass' has no attribute '_supported_quantizable_op_type'
+2022-05-13 09:21:52,763-WARNING: If you want to use training-aware and post-training quantization, please use Paddle >= 1.8.4 or develop version
+[2022-05-13 09:21:53,282] [    INFO] - Successfully installed fire-smoke-detect-paddle-1.0.0
