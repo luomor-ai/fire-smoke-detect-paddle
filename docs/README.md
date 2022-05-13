@@ -9,13 +9,12 @@ sudo docker pull registry.baidubce.com/paddlepaddle/paddle:2.2.0
 
 sudo docker run -ti --volume="$(pwd)":/app --rm paddlepaddle/paddle:2.2.0 bash
 sudo docker run -ti --volume="$(pwd)":/app --rm python:3.6 bash
+sudo docker cp docker/sources.list 514645646c0d:/etc/apt/sources.list
 pip install paddlehub -i https://pypi.doubanio.com/simple/
 pip install paddlepaddle -i https://pypi.doubanio.com/simple/
 
 pip show paddlehub
 
-apt-get update && apt-get install -y opencv-python-headless
-pip install opencv-python-headless -i https://pypi.doubanio.com/simple/
 apt-get update && apt-get install libgl1
 pip install opencv-python -i https://pypi.doubanio.com/simple/
 

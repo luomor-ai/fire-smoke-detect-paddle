@@ -3,6 +3,8 @@ RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak
 COPY docker/sources.list /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install vim -y
+RUN apt-get install libgl1 -y
+
 RUN pip install matplotlib -i https://pypi.doubanio.com/simple/
 
 RUN pip install paddlehub -i https://pypi.doubanio.com/simple/
