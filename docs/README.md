@@ -1,6 +1,8 @@
 ```shell
 sudo docker pull paddlepaddle/serving
 
+sudo docker run -ti --volume="$(pwd)":/app --rm paddlepaddle/serving bash
+
 https://hub.docker.com/r/paddlepaddle/serving
 ```
 
