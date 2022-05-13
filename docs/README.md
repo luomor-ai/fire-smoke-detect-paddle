@@ -28,6 +28,13 @@ The converted module is stored in `fire-smoke-detect-paddle-hub`.
 
 hub install fire-smoke-detect-paddle-hub/fire-smoke-detect-paddle.tar.gz
 
+hub serving start --modules [Module1==Version1, Module2==Version2, ...] \
+                  --port XXXX
+                  --config XXXX
+
+# 8866
+hub serving start --modules fire-smoke-detect-paddle
+
 https://hub.docker.com/r/paddlepaddle/serving
 ```
 
