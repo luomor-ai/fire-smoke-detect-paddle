@@ -17,3 +17,5 @@ def base64_to_np(b64tuple):
 
 decoded_label_map = base64_to_cv2(label_map)
 decoded_score_map = base64_to_np(score_map)
+
+decoded_mask = base64_to_cv2(mask)
