@@ -61,6 +61,9 @@ https://hub.docker.com/r/paddlepaddle/serving
 
 ```shell
 docker paddlehub
+paddlehub
+
+https://www.paddlepaddle.org.cn/hub
 ```
 
 ```shell
