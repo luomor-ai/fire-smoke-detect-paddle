@@ -71,3 +71,7 @@ serving start --modules fire-smoke-detect-paddle
  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://172.17.0.8:8866/ (Press CTRL+C to quit)
+
+  File "serving_client_demo.py", line 28, in <module>
+    for j in range(r.json()["results"][0]):
+TypeError: 'list' object cannot be interpreted as an integer

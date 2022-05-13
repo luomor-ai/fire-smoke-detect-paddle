@@ -25,7 +25,7 @@ if __name__ == '__main__':
     print(r.json()["results"])
 
     img = cv2.imread("fire_smoke/images/fire_000061.jpg")
-    for j in range(r.json()["results"][0]):
+    for j in range(len(r.json()["results"][0])):
         x, y, w, h = r.json()["results"][0][j]["bbox"]
         x, y, w, h = int(x), int(y), int(w), int(h)
         x2, y2 = x + w, y + h
