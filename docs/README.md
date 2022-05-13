@@ -1,5 +1,7 @@
 ```shell
+sudo docker pull paddlepaddle/serving
 
+https://hub.docker.com/r/paddlepaddle/serving
 ```
 
 ```shell
