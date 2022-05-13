@@ -3,7 +3,7 @@ sudo docker pull paddlepaddle/serving
 sudo docker pull paddlepaddle/paddle
 
 # sudo docker run -ti --volume="$(pwd)":/app --rm paddlepaddle/serving bash
-sudo docker run -ti --volume="$(pwd)":/app --rm paddlepaddle/paddle bash
+# sudo docker run -ti --volume="$(pwd)":/app --rm paddlepaddle/paddle bash
 
 https://hub.docker.com/r/paddlepaddle/serving
 ```
