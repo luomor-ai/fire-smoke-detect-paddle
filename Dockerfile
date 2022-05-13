@@ -1,7 +1,11 @@
 FROM python:3.6
+RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak
+COPY docker/sources.list /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install vim -y
 RUN pip install matplotlib -i https://pypi.doubanio.com/simple/
 
 RUN pip install paddlehub -i https://pypi.doubanio.com/simple/
 RUN pip install paddlepaddle -i https://pypi.doubanio.com/simple/
+
+# CMD ["tail", "-f", "/dev/null"]
