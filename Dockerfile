@@ -9,5 +9,6 @@ RUN pip install matplotlib -i https://pypi.doubanio.com/simple/
 
 RUN pip install paddlehub -i https://pypi.doubanio.com/simple/
 RUN pip install paddlepaddle -i https://pypi.doubanio.com/simple/
+RUN pip install paddlex -i https://pypi.doubanio.com/simple/
 
 # CMD ["tail", "-f", "/dev/null"]

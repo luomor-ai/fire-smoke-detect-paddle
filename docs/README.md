@@ -12,6 +12,7 @@ sudo docker run -ti --volume="$(pwd)":/app --rm python:3.6 bash
 sudo docker cp docker/sources.list 514645646c0d:/etc/apt/sources.list
 pip install paddlehub -i https://pypi.doubanio.com/simple/
 pip install paddlepaddle -i https://pypi.doubanio.com/simple/
+pip install paddlex -i https://pypi.doubanio.com/simple/
 
 pip show paddlehub
 
@@ -22,6 +23,10 @@ hub convert --model_dir inference_model/inference_model \
             --module_name fire-smoke-detect-paddle \
             --module_version 1.0.0 \
             --output_dir fire-smoke-detect-paddle-hub
+
+The converted module is stored in `fire-smoke-detect-paddle-hub`.
+
+hub install fire-smoke-detect-paddle-hub/fire-smoke-detect-paddle.tar.gz
 
 https://hub.docker.com/r/paddlepaddle/serving
 ```
