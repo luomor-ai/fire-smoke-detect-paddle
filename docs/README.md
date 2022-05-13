@@ -53,7 +53,9 @@ sudo docker build -t yiluxiangbei/paddlehub:v1.0 -f Dockerfile.base .
 sudo docker push yiluxiangbei/paddlehub:v1.0
 
 sudo docker run -ti --volume="$(pwd)":/app --rm yiluxiangbei/paddlehub:v1.0 bash
-
+cd /app
+python serving_client_demo.py
+ 
 https://hub.docker.com/r/paddlepaddle/serving
 ```
 
