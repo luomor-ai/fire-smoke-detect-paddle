@@ -26,6 +26,8 @@ if __name__ == '__main__':
 
     img = cv2.imread("fire_smoke/images/fire_000001.jpg")
     for j in range(len(r.json()["results"][0])):
+        if(r.json()["results"][0][j]["score"] < 0.08):
+            continue
         x, y, w, h = r.json()["results"][0][j]["bbox"]
         x, y, w, h = int(x), int(y), int(w), int(h)
         x2, y2 = x + w, y + h
