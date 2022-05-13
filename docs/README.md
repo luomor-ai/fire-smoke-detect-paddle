@@ -35,7 +35,9 @@ hub serving start --modules [Module1==Version1, Module2==Version2, ...] \
 # 8866
 hub serving start --modules fire-smoke-detect-paddle
 
-sudo docker build -t yiluxiangbei/fire-smoke-detect-paddle:v1.0
+sudo docker build -t yiluxiangbei/fire-smoke-detect-paddle:v1.0 .
+sudo docker push yiluxiangbei/fire-smoke-detect-paddle:v1.0
+
 sudo docker run -it -p 8866:8866 yiluxiangbei/fire-smoke-detect-paddle:v1.0
 
 https://hub.docker.com/r/paddlepaddle/serving
