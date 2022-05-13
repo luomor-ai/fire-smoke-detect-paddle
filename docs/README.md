@@ -46,6 +46,14 @@ sudo docker rm fire-smoke-detect-paddle
 
 sudo docker logs -f fire-smoke-detect-paddle
 
+http://49.232.6.131:8866/
+http://49.232.6.131:8866/predict/fire-smoke-detect-paddle
+
+sudo docker build -t yiluxiangbei/paddlehub:v1.0 -f Dockerfile.base .
+sudo docker push yiluxiangbei/paddlehub:v1.0
+
+sudo docker run -ti --volume="$(pwd)":/app --rm yiluxiangbei/paddlehub:v1.0 bash
+
 https://hub.docker.com/r/paddlepaddle/serving
 ```
 
