@@ -14,6 +14,7 @@ pip install paddlehub -i https://pypi.doubanio.com/simple/
 pip install paddlepaddle -i https://pypi.doubanio.com/simple/
 pip install paddlex -i https://pypi.doubanio.com/simple/
 
+sudo docker run -ti --volume="$(pwd)":/app --rm yiluxiangbei/paddlehub:v1.0 bash
 pip show paddlehub
 
 apt-get update && apt-get install libgl1
