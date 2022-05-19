@@ -10,5 +10,5 @@ RUN hub convert --model_dir inference_model \
 
 RUN hub install fire-smoke-detect-paddle-hub/fire-smoke-detect-paddle.tar.gz
 # hub serving start --modules fire-smoke-detect-paddle
-CMD ["tail", "-f", "/dev/null"]
-# ENTRYPOINT ["hub", "serving", "start", "--modules", "fire-smoke-detect-paddle"]
+# CMD ["tail", "-f", "/dev/null"]
+ENTRYPOINT ["hub", "serving", "start", "--modules", "fire-smoke-detect-paddle"]
